@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct YourTodoApp: App {
+    
+    let persistentContainer = CoreDataManager.shared.persistentContainer
+    
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environment(\.managedObjectContext, persistentContainer.viewContext)
         }
     }
 }

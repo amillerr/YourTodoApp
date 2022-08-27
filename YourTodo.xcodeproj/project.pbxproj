@@ -11,6 +11,8 @@
 		2570737928B9150500528D4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570737828B9150500528D4F /* ContentView.swift */; };
 		2570737B28B9150700528D4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2570737A28B9150700528D4F /* Assets.xcassets */; };
 		2570737E28B9150700528D4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2570737D28B9150700528D4F /* Preview Assets.xcassets */; };
+		2570738628B9153B00528D4F /* YourTodoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2570738428B9153B00528D4F /* YourTodoModel.xcdatamodeld */; };
+		2570738A28B93C9400528D4F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570738928B93C9400528D4F /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		2570737828B9150500528D4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2570737A28B9150700528D4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2570737D28B9150700528D4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2570738528B9153B00528D4F /* YourTodoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YourTodoModel.xcdatamodel; sourceTree = "<group>"; };
+		2570738928B93C9400528D4F /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +55,12 @@
 		2570737528B9150500528D4F /* YourTodo */ = {
 			isa = PBXGroup;
 			children = (
+				2570738828B9160D00528D4F /* Managers */,
 				2570737628B9150500528D4F /* YourTodoApp.swift */,
 				2570737828B9150500528D4F /* ContentView.swift */,
 				2570737A28B9150700528D4F /* Assets.xcassets */,
 				2570737C28B9150700528D4F /* Preview Content */,
+				2570738428B9153B00528D4F /* YourTodoModel.xcdatamodeld */,
 			);
 			path = YourTodo;
 			sourceTree = "<group>";
@@ -65,6 +71,14 @@
 				2570737D28B9150700528D4F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2570738828B9160D00528D4F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2570738928B93C9400528D4F /* CoreDataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2570738628B9153B00528D4F /* YourTodoModel.xcdatamodeld in Sources */,
 				2570737928B9150500528D4F /* ContentView.swift in Sources */,
+				2570738A28B93C9400528D4F /* CoreDataManager.swift in Sources */,
 				2570737728B9150500528D4F /* YourTodoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +283,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"YourTodo/Preview Content\"";
+				DEVELOPMENT_TEAM = 5LG9W4LANW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -295,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"YourTodo/Preview Content\"";
+				DEVELOPMENT_TEAM = 5LG9W4LANW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -337,6 +355,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2570738428B9153B00528D4F /* YourTodoModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2570738528B9153B00528D4F /* YourTodoModel.xcdatamodel */,
+			);
+			currentVersion = 2570738528B9153B00528D4F /* YourTodoModel.xcdatamodel */;
+			path = YourTodoModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2570736B28B9150500528D4F /* Project object */;
 }
